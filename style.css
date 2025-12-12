@@ -1,0 +1,44 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; min-height: 100vh; background: #f4f4f9; color: #333; }
+.container { display: grid; grid-template-columns: 3fr minmax(10px, 2%) 1fr; min-height: 100vh; max-width: 1400px; margin: 0 auto; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
+.left { display: grid; grid-template-rows: auto 1fr auto; height: 100%; }
+.right { display: grid; grid-template-rows: 1fr auto; height: 100%; background: #2c3e50; color: white; }
+.vbar { background: linear-gradient(to bottom, #3498db, #8e44ad); height: 100%; }
+
+.block { padding: 1.5rem; margin: 10px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); overflow: hidden; } /* overflow hidden важливий для фону */
+.block1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: right; }
+.block1 h2 { margin: 0; font-size: 2.5rem; }
+.block3 { background: white; color: #333; overflow-y: auto; }
+.block3 h2 { color: #2c3e50; margin-top: 0; }
+.block4 { background: linear-gradient(135deg, #764ba2 0%, #667eea 100%); color: white; text-align: center; }
+.block2 { background: #34495e; display: flex; align-items: center; justify-content: center; transition: background 0.3s; }
+.block2 nav ul { list-style: none; width: 100%; padding: 0; }
+.block2 nav ul li { margin: 0.8rem 0; }
+.block2 nav ul li a { display: block; padding: 0.8rem 1.2rem; color: #ecf0f1; text-decoration: none; border-radius: 8px; }
+.block2 nav ul li a:hover { background: #3498db; }
+.block5 { background: #2c3e50; color: #95a5a6; text-align: center; }
+
+@media (max-width: 700px) {
+  .container { grid-template-columns: 1fr; }
+  .vbar, .right { display: none; } 
+}
+
+.lab-task {
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+.lab-task textarea { width: 100%; margin-bottom: 5px; padding: 5px; }
+.lab-task button { padding: 8px 15px; background: #3498db; color: white; border: none; cursor: pointer; border-radius: 4px; }
+.lab-task button:hover { background: #2980b9; }
+
+#block-list { list-style: none; padding: 0; }
+#block-list li {
+    background: #fff; border: 1px solid #eee; padding: 8px; margin-bottom: 5px; cursor: pointer;
+}
+#block-list li:hover { background: #f0f0f0; }
+.btn-small { padding: 5px 10px; margin-top: 5px; font-size: 0.9em; }
+.save { background: #27ae60; }
+.del { background: #e74c3c; }

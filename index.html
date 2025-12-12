@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+    <div class="block block1" id="block-1">
+        <h2 style="text-align:right;">SKAM</h2>
+        <p>Header Block Text</p> 
+    </div>
+    
+    <div class="block block3" id="block-3">
+      
+      <div class="lab-task">
+          <h3>Площа паралелограма</h3>
+          <p>Введіть сторону (a) та висоту (h):</p>
+          <input type="number" id="parallelogram-a" placeholder="Сторона a" style="width: 100px;">
+          <input type="number" id="parallelogram-h" placeholder="Висота h" style="width: 100px;">
+          <button onclick="task2CalcArea()">Обчислити</button>
+          <div id="task2-result" style="margin-top: 10px; font-weight: bold; color: #2980b9;"></div>
+      </div>
+
+      <div class="lab-task">
+          <h3>Підрахунок слів</h3>
+          <textarea id="word-count-input" rows="3" placeholder="Введіть текст сюди..."></textarea>
+          <button onclick="task3CountWords()">Порахувати слова</button>
+      </div>
+
+      <div class="lab-task">
+          <h3>Колір Блоку 2</h3>
+          <p>Оберіть колір і наведіть мишку на блок 2:</p>
+          <input type="color" id="block2-color-picker" value="#34495e">
+      </div>
+
+      <hr>
+      <div id="task5-container" class="lab-task" style="border: 2px solid #e67e22;">
+          <h3>Список блоків</h3>
+          <p>Клікніть на назву блоку, щоб додати йому фон:</p>
+          <ul id="block-list"></ul>
+      </div>
+    </div>
+
+    <div class="block block4" id="block-4">
+        <h2>SKAM</h2>
+    </div>
+  </div>
+
+  <div class="vbar"></div>
+
+  <div class="right">
+    <div class="block block2" id="block-2">
+      <nav>
+        <ul>
+          <li><a href="#">Головна</a></li>
+          <li><a href="#">Сезони</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="block block5" id="block-5">
+        <p>© 2025 SKAM Fan Site</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
